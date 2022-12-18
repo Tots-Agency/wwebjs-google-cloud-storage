@@ -20,7 +20,7 @@ The module is now available on npm! `npm i wwebjs-google-cloud-storage`
 const { Client, RemoteAuth } = require('whatsapp-web.js');
 const { WwebjsCloudStorage } = require('wwebjs-google-cloud-storage');
 
-const store = new WwebjsCloudStorage({ './key.json', 'bucket-name' });
+const store = new WwebjsCloudStorage('./key.json', 'bucket-name');
 const client = new Client({
     authStrategy: new RemoteAuth({
         store: store,
@@ -29,7 +29,6 @@ const client = new Client({
 });
 
 client.initialize();
-
 ```
 
 ## Delete Remote Session
