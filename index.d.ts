@@ -1,0 +1,1 @@
+export const WwebjsCloudStorage: typeof import("./src/WwebjsCloudStorage");
