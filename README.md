@@ -20,17 +20,15 @@ The module is now available on npm! `npm i wwebjs-google-cloud-storage`
 const { Client, RemoteAuth } = require('whatsapp-web.js');
 const { WwebjsCloudStorage } = require('wwebjs-google-cloud-storage');
 
-mongoose.connect(process.env.MONGODB_URI).then(() => {
-    const store = new WwebjsCloudStorage({ './key.json', 'bucket-name' });
-    const client = new Client({
-        authStrategy: new RemoteAuth({
-            store: store,
-            backupSyncIntervalMs: 300000
-        })
-    });
-
-    client.initialize();
+const store = new WwebjsCloudStorage({ './key.json', 'bucket-name' });
+const client = new Client({
+    authStrategy: new RemoteAuth({
+        store: store,
+        backupSyncIntervalMs: 300000
+    })
 });
+
+client.initialize();
 
 ```
 
