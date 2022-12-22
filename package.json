@@ -1,6 +1,6 @@
 {
   "name": "wwebjs-google-cloud-storage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Google Cloud Storage plugin for whatsapp-web.js!",
   "main": "index.js",
   "scripts": {
